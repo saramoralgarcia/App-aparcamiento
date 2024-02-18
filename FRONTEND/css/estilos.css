@@ -1,0 +1,47 @@
+.dashed-line {
+border-top: 10px dashed black; 
+margin: 20px 0;
+}
+.plaza{
+    height: 50px;
+    background-color: #9ADE7B;
+}
+.carretera{
+    background-color: #808080;
+    height: 50px;
+}
+.texto{
+    color: #606060;
+}
+.numeros{
+    color: black
+}
+#car{
+    /* position: absolute; */
+    bottom: 0;
+    z-index: 9999;
+    width: 300px;
+    animation: acelerate 5s linear forwards;
+}
+.titulo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.borde{
+    border-radius: 10px;
+    background-color: grey;
+    padding: 5px;
+    margin-right: 50px;
+}
+
+
+@keyframes acelerate{
+    from{
+        transform: translateX(-800px) scaleX(-1);
+    }
+    to{
+        transform: translateX(1090px)  scaleX(-1);
+        visibility: hidden; 
+    }
+}
+

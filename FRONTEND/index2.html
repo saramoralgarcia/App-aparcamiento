@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aparking</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="./js/listarCoches.js"></script>
+    <script src="./js/matricula.js" ></script>
+    <script src="./js/beneficioDia.js" ></script>
+    <script src="./js/actualizarPlazas.js" ></script>
+    <script src="./js/salidaCoche.js" ></script>
+</head>
+
+<body>
+    <div class="d-flex flex-column min-vh-100 bg bg-dark">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold titulo " href="#">APARKING</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav  mx-auto">
+                    <button id="botonListarCoches" type="button" class="btn btn-dark m-2">Lista de Coches</button>
+                    <button id="botonBeneficioDia" type="button" class="btn btn-dark m-2">Beneficios del Día</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- GRID -->
+    <div class="container d-flex justify-content-center texto">
+        <div id="planta1" class="container numeros">
+            <div class="container d-flex justify-content-center my-3"id="contenedorPlazas">
+                <div class="text-center d-flex align-items-center"><h3 class="texto borde"> Planta 1 </h3></div>
+                <div id="plaza" class="container text-center m-2">
+                    <div class="row row-cols-5">
+                        <div  id="plaza-1" class="plaza col-2.4 border-end border-2 p-2">1</div>
+                        <div id="plaza-2" class="plaza col-2.4 border-end border-2 p-2">2</div>
+                        <div id="plaza-3" class="plaza col-2.4 border-end border-2 p-2">3</div>
+                        <div id="plaza-4" class="plaza col-2.4 border-end border-2 p-2">4</div>
+                        <div id="plaza-5" class="plaza col-2.4 p-2">5</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 carretera">
+                            <hr class="dashed-line">
+                        </div>
+                    </div>
+                    <div class="row row-cols-5">
+                        <div id="plaza-6" class="plaza col-2.4 border-end border-2 p-2" >6</div>
+                        <div id="plaza-7" class="plaza col-2.4 border-end border-2 p-2">7</div>
+                        <div id="plaza-8" class="plaza col-2.4 border-end border-2 p-2">8</div>
+                        <div id="plaza-9" class="plaza col-2.4 border-end border-2 p-2">9</div>
+                        <div id="plaza-10" class="plaza col-2.4 p-2">10</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="container d-flex justify-content-center texto ">
+        <div id="planta2" class="container numeros">
+            <div class="container">
+                    <img id="car" src="./images/coche.png" alt="coche">
+                </div>
+                <div class="container d-flex justify-content-center ">
+                <div class="text-center d-flex align-items-center"><h3 class="texto borde"> Planta 2</h3></div>
+                    <div class="container text-center m-2">
+                        
+                        <div class="row row-cols-5">
+                            <div id="plaza-11" class="plaza col-2.4 border-end border-2 p-2">11</div>
+                            <div id="plaza-12" class="plaza col-2.4 border-end border-2 p-2">12</div>
+                            <div id="plaza-13" class="plaza col-2.4 border-end border-2 p-2">13</div>
+                            <div id="plaza-14" class="plaza col-2.4 border-end border-2 p-2">14</div>
+                            <div id="plaza-15" class="plaza col-2.4 p-2">15</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 carretera">
+                                <hr class="dashed-line">
+                            </div>
+                        </div>
+                        <div class="row row-cols-5">
+                            <div id="plaza-16" class="plaza col-2.4 border-end border-2 p-2">16</div>
+                            <div id="plaza-17" class="plaza col-2.4 border-end border-2 p-2">17</div>
+                            <div id="plaza-18" class="plaza col-2.4 border-end border-2 p-2">18</div>
+                            <div id="plaza-19" class="plaza col-2.4 border-end border-2 p-2">19</div>
+                            <div id="plaza-20" class="plaza col-2.4 p-2">20</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="textoBeneficio" class=""></div>
+
+        </div>
+    </div>
+    
+    </div>
+<!--  --------------------------------- Modal Plazas Libres --------------------------------------- -->
+
+    <div class="modal" id="popupPlazasLibres" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">¡¡Tienes un Problema!!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="popup-body"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!--  --------------------------------- Modal Beneficio Día --------------------------------------- -->
+    <div class="modal" id="popupBeneficio" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">¡¡Enhorabuena!!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="modal-body"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!--  ------------------------------------------------------------------------------------------- -->
+<!-- FOOTER  -->
+
+    <footer  class="navbar navbar-expand-lg bg-body-tertiary fixed-bottom">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav mx-auto">
+                    <!-- <button id="botonPlanta1" type="button" class="btn btn-dark m-2">1ª Planta</button> -->
+                    <button id="startButton" type="button" class="btn btn-dark m-2">Insertar Coche</button>
+                    <button id="stopButton" type="button" class="btn btn-dark m-2">Salida Coche</button>
+                    <!-- <button id="planta2" type="button" class="btn btn-dark m-2">2ª Planta</button> -->
+                </div>
+            </div>
+        </div>
+    </footer >
+</div>
+    
+    
+</body>
+
+</html>
